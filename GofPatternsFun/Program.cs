@@ -1,4 +1,5 @@
 ﻿using GofPatternsFun.Creational;
+using GofPatternsFun.Structural;
 
 namespace GofPatternsFun
 {
@@ -6,8 +7,10 @@ namespace GofPatternsFun
     {
         static void Main(string[] args)
         {
-           PatternsDemo.Singleton();
-           PatternsDemo.Singleton2Realization();
+            PatternsDemo.Singleton();
+            PatternsDemo.Singleton2Realization();
+
+            StructuralPatternsDemo.Facade();
         }
     }
 }
