@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creational\Singleton\Logger2.cs" />
     <Compile Include="Creational\PatternsDemo.cs" />
     <Compile Include="Creational\Singleton\Logger.cs" />
     <Compile Include="Program.cs" />
@@ -51,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Behavioral\" />
-    <Folder Include="Structural\" />
+    <Folder Include="Structural\Facade\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -6,6 +6,10 @@ namespace GofPatternsFun.Creational.Singleton
     /// <summary>
     /// Provides only one class instance and only one accsess poit to it.
     /// Private constructor, public method which creates 1 instance(if it doesn't exists) and return it
+    /// -------Singleton is considered as anti-pattern for the following reasons:
+    /// It violates Single Responsibility Principle as it controls its own creation and lifecycle
+    /// One of its side effects is a global variable
+    /// It causes code to be tightly coupled. This makes faking it out under test very difficult
     /// </summary>
     class Logger
     {

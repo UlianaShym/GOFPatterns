@@ -7,6 +7,7 @@ namespace GofPatternsFun
         static void Main(string[] args)
         {
            PatternsDemo.Singleton();
+           PatternsDemo.Singleton2Realization();
         }
     }
 }
