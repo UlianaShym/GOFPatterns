@@ -1,4 +1,4 @@
-﻿using System;
+﻿using GofPatternsFun.Creational;
 
 namespace GofPatternsFun
 {
@@ -6,7 +6,7 @@ namespace GofPatternsFun
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("v");
+           PatternsDemo.Singleton();
         }
     }
 }
