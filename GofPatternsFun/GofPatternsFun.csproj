@@ -41,6 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral\BehaviourPatternsDemo.cs" />
+    <Compile Include="Behavioral\Mediator_\ChatRoomMediator.cs" />
+    <Compile Include="Behavioral\Mediator_\Colleage\ParticipantBase.cs" />
+    <Compile Include="Behavioral\Mediator_\Colleage\Readonly.cs" />
+    <Compile Include="Behavioral\Mediator_\Colleage\Writeonly.cs" />
     <Compile Include="Creational\Singleton\Logger2.cs" />
     <Compile Include="Creational\PatternsDemo.cs" />
     <Compile Include="Creational\Singleton\Logger.cs" />
@@ -54,9 +59,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Behavioral\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
