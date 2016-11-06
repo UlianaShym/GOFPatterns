@@ -1,6 +1,7 @@
 ﻿using System;
 using GofPatternsFun.Creational.Builder;
 using GofPatternsFun.Creational.Builder.Builders;
+using GofPatternsFun.Creational.FactoryMethod;
 using GofPatternsFun.Creational.Singleton;
 
 namespace GofPatternsFun.Creational
@@ -52,6 +53,13 @@ namespace GofPatternsFun.Creational
             buyLaptop.CreateLaptopBuilder(customLaptopBuilder);
             buyLaptop.BuildLaptop();
             buyLaptop.GetLaptop();
+        }
+
+        public static void FactoryMethod()
+        {
+            DbFactory.ConnectToDb(DbType.Oracle);
+
+            DbFactory.ConnectToDb(DbType.Sql);
         }
     }
 }
