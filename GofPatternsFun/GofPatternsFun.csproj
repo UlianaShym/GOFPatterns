@@ -64,6 +64,10 @@
     <Compile Include="Creational\Singleton\Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural\Decorator\AutoCar.cs" />
+    <Compile Include="Structural\Decorator\Entitties\Car.cs" />
+    <Compile Include="Structural\Decorator\CarDecorator.cs" />
+    <Compile Include="Structural\Decorator\Entitties\TaxiCar.cs" />
     <Compile Include="Structural\Facade\SubSystem\BookHotelSystem.cs" />
     <Compile Include="Structural\Facade\SkiResortFacade.cs" />
     <Compile Include="Structural\Facade\SubSystem\SkiPassSystem.cs" />

@@ -9,17 +9,17 @@ namespace GofPatternsFun
         static void Main(string[] args)
         {
             // Creational
-
             //PatternsDemo.Singleton();
             //PatternsDemo.Singleton2Realization();
             //PatternsDemo.Builder();
 
 
             //StructuralPatternsDemo.Facade();
+            StructuralPatternsDemo.Decorator();
 
             //BehaviourPatternsDemo.Mediator();
-            BehaviourPatternsDemo.TemplateMethod();
-            BehaviourPatternsDemo.Strategy();
+            //BehaviourPatternsDemo.TemplateMethod();
+            //BehaviourPatternsDemo.Strategy();
 
         }
     }

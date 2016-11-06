@@ -1,4 +1,6 @@
 ﻿using System;
+using GofPatternsFun.Structural.Decorator;
+using GofPatternsFun.Structural.Decorator.Entitties;
 using GofPatternsFun.Structural.Facade;
 
 namespace GofPatternsFun.Structural
@@ -11,5 +13,12 @@ namespace GofPatternsFun.Structural
             Console.WriteLine("You booked your tour. Price = {0}.", facade.BookSkiTour(4, 3));
         }
 
+        public static void Decorator()
+        {
+            TaxiCar taxi = new TaxiCar();
+            CarDecorator carDecorator = new AutoCar(taxi);
+            carDecorator.Go();
+
+        }
     }
 }
