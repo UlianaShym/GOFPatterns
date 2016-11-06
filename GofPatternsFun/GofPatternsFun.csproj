@@ -64,6 +64,9 @@
     <Compile Include="Creational\Singleton\Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structural\Adapter\MixtureAdapter.cs" />
+    <Compile Include="Structural\Adapter\NewLogic\Mixture.cs" />
+    <Compile Include="Structural\Adapter\OldLogic\ChemicalDatabank.cs" />
     <Compile Include="Structural\Decorator\AutoCar.cs" />
     <Compile Include="Structural\Decorator\Entitties\Car.cs" />
     <Compile Include="Structural\Decorator\CarDecorator.cs" />
