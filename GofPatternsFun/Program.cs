@@ -12,12 +12,13 @@ namespace GofPatternsFun
 
             //PatternsDemo.Singleton();
             //PatternsDemo.Singleton2Realization();
-            PatternsDemo.Builder();
+            //PatternsDemo.Builder();
 
 
             //StructuralPatternsDemo.Facade();
 
-            BehaviourPatternsDemo.Mediator();
+            //BehaviourPatternsDemo.Mediator();
+            BehaviourPatternsDemo.TemplateMethod();
 
            
         }
