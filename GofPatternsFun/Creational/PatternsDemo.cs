@@ -1,5 +1,6 @@
 ﻿using System;
 using GofPatternsFun.Creational.Builder;
+using GofPatternsFun.Creational.Builder.Builders;
 using GofPatternsFun.Creational.Singleton;
 
 namespace GofPatternsFun.Creational
@@ -43,7 +44,12 @@ namespace GofPatternsFun.Creational
         {
             HomeLaptopBuilder homeLaptopBuilder = new HomeLaptopBuilder();
             BuyLaptopDirector buyLaptop = new BuyLaptopDirector();
-            buyLaptop.CreateLaptop(homeLaptopBuilder);
+            buyLaptop.CreateLaptopBuilder(homeLaptopBuilder);
+            buyLaptop.BuildLaptop();
+            buyLaptop.GetLaptop();
+
+            CustomLaptopBuilder customLaptopBuilder = new CustomLaptopBuilder("Apple", Size.ExtraLarge, Core.I7);
+            buyLaptop.CreateLaptopBuilder(customLaptopBuilder);
             buyLaptop.BuildLaptop();
             buyLaptop.GetLaptop();
         }

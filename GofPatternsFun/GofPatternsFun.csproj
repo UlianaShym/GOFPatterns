@@ -46,6 +46,7 @@
     <Compile Include="Behavioral\Mediator_\Colleage\ParticipantBase.cs" />
     <Compile Include="Behavioral\Mediator_\Colleage\Readonly.cs" />
     <Compile Include="Behavioral\Mediator_\Colleage\Writeonly.cs" />
+    <Compile Include="Creational\Builder\Builders\CustomLaptopBuilder.cs" />
     <Compile Include="Creational\Builder\Builders\WorkLaptopBuilder.cs" />
     <Compile Include="Creational\Builder\BuyLaptopDirector.cs" />
     <Compile Include="Creational\Builder\Helper.cs" />

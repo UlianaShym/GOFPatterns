@@ -1,10 +1,12 @@
-﻿namespace GofPatternsFun.Creational.Builder
+﻿using GofPatternsFun.Creational.Builder.Builders;
+
+namespace GofPatternsFun.Creational.Builder
 {
     class BuyLaptopDirector
     {
         private LaptopBuilder _lBuilder;
 
-        public void CreateLaptop(LaptopBuilder lBuilder)
+        public void CreateLaptopBuilder(LaptopBuilder lBuilder)
         {
             _lBuilder = lBuilder;
         }

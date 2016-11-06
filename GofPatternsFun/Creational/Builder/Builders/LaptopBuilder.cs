@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GofPatternsFun.Creational.Builder
+namespace GofPatternsFun.Creational.Builder.Builders
 {
     abstract class LaptopBuilder
     {

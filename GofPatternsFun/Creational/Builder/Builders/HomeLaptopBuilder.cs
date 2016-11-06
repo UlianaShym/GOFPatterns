@@ -1,4 +1,4 @@
-﻿namespace GofPatternsFun.Creational.Builder
+﻿namespace GofPatternsFun.Creational.Builder.Builders
 {
     class HomeLaptopBuilder : LaptopBuilder
     {
