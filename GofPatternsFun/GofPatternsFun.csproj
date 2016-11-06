@@ -46,6 +46,10 @@
     <Compile Include="Behavioral\Mediator_\Colleage\ParticipantBase.cs" />
     <Compile Include="Behavioral\Mediator_\Colleage\Readonly.cs" />
     <Compile Include="Behavioral\Mediator_\Colleage\Writeonly.cs" />
+    <Compile Include="Behavioral\Strategy\Strategies\MergeSortStrategy.cs" />
+    <Compile Include="Behavioral\Strategy\Strategies\QuickSortStrategy.cs" />
+    <Compile Include="Behavioral\Strategy\SortContext.cs" />
+    <Compile Include="Behavioral\Strategy\Strategies\SortStrategyBase.cs" />
     <Compile Include="Behavioral\TemplateMethod\ComplexIntegralSolver.cs" />
     <Compile Include="Behavioral\TemplateMethod\IntegralSolver.cs" />
     <Compile Include="Creational\Builder\Builders\CustomLaptopBuilder.cs" />

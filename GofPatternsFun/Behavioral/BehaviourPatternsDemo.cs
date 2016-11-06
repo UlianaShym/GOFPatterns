@@ -1,5 +1,7 @@
 ﻿using GofPatternsFun.Behavioral.Mediator_;
 using GofPatternsFun.Behavioral.Mediator_.Colleage;
+using GofPatternsFun.Behavioral.Strategy;
+using GofPatternsFun.Behavioral.Strategy.Strategies;
 using GofPatternsFun.Behavioral.TemplateMethod;
 
 namespace GofPatternsFun.Behavioral
@@ -25,6 +27,15 @@ namespace GofPatternsFun.Behavioral
             // We need to solve complex integral need to change solving step
             IntegralSolver complexIntegralSolver = new ComplexIntegralSolver();
             complexIntegralSolver.TemplateSolve();
+        }
+
+        public static void Strategy()
+        {
+            SortContext sortContext = new SortContext();
+            sortContext.SetSortedStrategy(new MergeSortStrategy());
+            sortContext.Sort();
+            sortContext.SetSortedStrategy(new QuickSortStrategy());
+            sortContext.Sort();
         }
     }
 }

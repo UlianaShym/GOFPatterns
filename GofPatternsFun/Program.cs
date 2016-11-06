@@ -19,8 +19,8 @@ namespace GofPatternsFun
 
             //BehaviourPatternsDemo.Mediator();
             BehaviourPatternsDemo.TemplateMethod();
+            BehaviourPatternsDemo.Strategy();
 
-           
         }
     }
 }
