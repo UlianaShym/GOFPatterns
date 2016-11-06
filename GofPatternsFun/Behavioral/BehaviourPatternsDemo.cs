@@ -13,7 +13,7 @@ namespace GofPatternsFun.Behavioral
             mediator.Register(writeonly);
             mediator.Register(readonlyp);
             mediator.Send("Bob", "Bob2", "Message");
-            mediator.Send("Bob2", "Bob", "ivub");
+            mediator.Send("Bob2", "Bob", "Text message.");
         }
     }
 }

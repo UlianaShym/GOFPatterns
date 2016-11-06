@@ -1,4 +1,5 @@
 ﻿using System;
+using GofPatternsFun.Creational.Builder;
 using GofPatternsFun.Creational.Singleton;
 
 namespace GofPatternsFun.Creational
@@ -36,6 +37,15 @@ namespace GofPatternsFun.Creational
             logger2.AddLog("Message " + ++count);
             Console.WriteLine("Second logger contains messages from first -> only 1 class instance.");
             logger2.PrintAllLogs();
+        }
+
+        public static void Builder()
+        {
+            HomeLaptopBuilder homeLaptopBuilder = new HomeLaptopBuilder();
+            BuyLaptopDirector buyLaptop = new BuyLaptopDirector();
+            buyLaptop.CreateLaptop(homeLaptopBuilder);
+            buyLaptop.BuildLaptop();
+            buyLaptop.GetLaptop();
         }
     }
 }
