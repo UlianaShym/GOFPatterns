@@ -4,6 +4,7 @@ using GofPatternsFun.Creational.Builder;
 using GofPatternsFun.Creational.Builder.Builders;
 using GofPatternsFun.Creational.FactoryMethod;
 using GofPatternsFun.Creational.FactoryMethod.Factories;
+using GofPatternsFun.Creational.Prototype;
 using GofPatternsFun.Creational.Singleton;
 
 namespace GofPatternsFun.Creational
@@ -60,7 +61,7 @@ namespace GofPatternsFun.Creational
         public static void FactoryMethod()
         {
             DbFactory dbFactory = new SqlFactory();
-            dbFactory.ConnectToDb();
+            IConnection sqlConn = dbFactory.ConnectToDb();
 
             DbFactory dbFactory2 = new OracleFactory();
             IConnection oracleConn = dbFactory2.ConnectToDb();
@@ -75,6 +76,33 @@ namespace GofPatternsFun.Creational
             VegeterianFactory vegeterianFactory = new VegeterianFactory();
             vegeterianFactory.GetBreakfast();
             vegeterianFactory.GetSupper();
+        }
+
+        public static void Prototype()
+        {
+            Developer dev = new Developer
+            {
+                PreferredLanguage = ".NET",
+                Name = "Uliana",
+                Role = "Junior"
+            };
+
+            Console.WriteLine(dev.GetDetails());
+
+            // This info is very hard to get( long SQL operation)
+            TechWriter writer = new TechWriter
+            {
+                WordsPerMinute = 156,
+                Name = "Bob",
+                Role = "Trainee"
+            };
+            Console.WriteLine(writer.GetDetails());
+
+            // So for new writer we just copy existing info
+            TechWriter writer2 = (TechWriter) writer.Clone();
+            writer2.WordsPerMinute = 45;
+            Console.WriteLine(writer2.GetDetails());
+            Console.WriteLine(writer.GetDetails());
         }
     }
 }

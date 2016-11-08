@@ -76,6 +76,9 @@
     <Compile Include="Creational\FactoryMethod\OracleConnection.cs" />
     <Compile Include="Creational\FactoryMethod\SqlConnection.cs" />
     <Compile Include="Creational\FactoryMethod\Factories\DbFactory.cs" />
+    <Compile Include="Creational\Prototype\Developer.cs" />
+    <Compile Include="Creational\Prototype\EmployeePrototype.cs" />
+    <Compile Include="Creational\Prototype\TechWriter.cs" />
     <Compile Include="Creational\Singleton\Logger2.cs" />
     <Compile Include="Creational\PatternsDemo.cs" />
     <Compile Include="Creational\Singleton\Logger.cs" />
