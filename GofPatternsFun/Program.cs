@@ -13,6 +13,7 @@ namespace GofPatternsFun
             //PatternsDemo.Singleton2Realization();
             //PatternsDemo.Builder();
             PatternsDemo.FactoryMethod();
+            PatternsDemo.AbstractFactory();
 
             //StructuralPatternsDemo.Adapter();
             //StructuralPatternsDemo.Facade();

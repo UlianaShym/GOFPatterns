@@ -52,6 +52,16 @@
     <Compile Include="Behavioral\Strategy\Strategies\SortStrategyBase.cs" />
     <Compile Include="Behavioral\TemplateMethod\ComplexIntegralSolver.cs" />
     <Compile Include="Behavioral\TemplateMethod\IntegralSolver.cs" />
+    <Compile Include="Creational\AbstractFactory\Factories\IMealFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Factories\MeatFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Factories\VegeterianFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Meat\Meat.cs" />
+    <Compile Include="Creational\AbstractFactory\Meat\MeatBreakfast.cs" />
+    <Compile Include="Creational\AbstractFactory\Meat\MeatSupper.cs" />
+    <Compile Include="Creational\AbstractFactory\Models\Breakfast.cs" />
+    <Compile Include="Creational\AbstractFactory\Models\Supper.cs" />
+    <Compile Include="Creational\AbstractFactory\Vegeterian\VegeterianBreakfast.cs" />
+    <Compile Include="Creational\AbstractFactory\Vegeterian\VegeterianSupper.cs" />
     <Compile Include="Creational\Builder\Builders\CustomLaptopBuilder.cs" />
     <Compile Include="Creational\Builder\Builders\WorkLaptopBuilder.cs" />
     <Compile Include="Creational\Builder\BuyLaptopDirector.cs" />

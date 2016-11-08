@@ -1,4 +1,5 @@
 ﻿using System;
+using GofPatternsFun.Creational.AbstractFactory.Factories;
 using GofPatternsFun.Creational.Builder;
 using GofPatternsFun.Creational.Builder.Builders;
 using GofPatternsFun.Creational.FactoryMethod;
@@ -60,6 +61,17 @@ namespace GofPatternsFun.Creational
             DbFactory.ConnectToDb(DbType.Oracle);
 
             DbFactory.ConnectToDb(DbType.Sql);
+        }
+
+        public static void AbstractFactory()
+        {
+            MeatFactory meatFactory = new MeatFactory();
+            meatFactory.GetBreakfast();
+            meatFactory.GetSupper();
+
+            VegeterianFactory vegeterianFactory = new VegeterianFactory();
+            vegeterianFactory.GetBreakfast();
+            vegeterianFactory.GetSupper();
         }
     }
 }
