@@ -14,7 +14,7 @@ namespace GofPatternsFun
             //PatternsDemo.Builder();
             //PatternsDemo.FactoryMethod();
             //PatternsDemo.AbstractFactory();
-            PatternsDemo.Prototype();
+            //PatternsDemo.Prototype();
 
             #endregion
 
@@ -31,6 +31,7 @@ namespace GofPatternsFun
             //BehaviourPatternsDemo.Mediator();
             //BehaviourPatternsDemo.TemplateMethod();
             //BehaviourPatternsDemo.Strategy();
+            BehaviourPatternsDemo.ChainOfResponsibility();
 
             #endregion
         }

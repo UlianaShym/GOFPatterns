@@ -42,6 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Behavioral\BehaviourPatternsDemo.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Handlers\Approver.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Handlers\Director.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Handlers\President.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Handlers\VicePresident.cs" />
+    <Compile Include="Behavioral\ChainOfResponsibility\Purchase.cs" />
     <Compile Include="Behavioral\Mediator_\ChatRoomMediator.cs" />
     <Compile Include="Behavioral\Mediator_\Colleage\ParticipantBase.cs" />
     <Compile Include="Behavioral\Mediator_\Colleage\Readonly.cs" />
@@ -100,6 +105,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Behavioral\Command\" />
     <Folder Include="Structural\Proxy\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

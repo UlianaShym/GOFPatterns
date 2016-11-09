@@ -1,4 +1,6 @@
-﻿using GofPatternsFun.Behavioral.Mediator_;
+﻿using GofPatternsFun.Behavioral.ChainOfResponsibility;
+using GofPatternsFun.Behavioral.ChainOfResponsibility.Handlers;
+using GofPatternsFun.Behavioral.Mediator_;
 using GofPatternsFun.Behavioral.Mediator_.Colleage;
 using GofPatternsFun.Behavioral.Strategy;
 using GofPatternsFun.Behavioral.Strategy.Strategies;
@@ -36,6 +38,23 @@ namespace GofPatternsFun.Behavioral
             sortContext.Sort();
             sortContext.SetSortedStrategy(new QuickSortStrategy());
             sortContext.Sort();
+        }
+
+        public static void ChainOfResponsibility()
+        {
+            Approver vicePresident = new VicePresident();
+            Approver president = new President();
+            Approver director = new Director();
+
+            director.SetSuccessor(vicePresident);
+            vicePresident.SetSuccessor(president);
+
+            var order1 = new Purchase(2034, 350.0, "Assets");
+            director.ProcessRequest(order1);
+            var order2 = new Purchase(2035, 35000.0, "Assets bigger amount.");
+            director.ProcessRequest(order2);
+            var order3 = new Purchase(2036, 350000.0, "Assets the biggest amount.");
+            director.ProcessRequest(order3);
         }
     }
 }
