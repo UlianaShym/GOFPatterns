@@ -2,6 +2,9 @@
 using GofPatternsFun.Behavioral.ChainOfResponsibility.Handlers;
 using GofPatternsFun.Behavioral.Mediator_;
 using GofPatternsFun.Behavioral.Mediator_.Colleage;
+using GofPatternsFun.Behavioral.Observer;
+using GofPatternsFun.Behavioral.Observer.Objects;
+using GofPatternsFun.Behavioral.Observer.Observers;
 using GofPatternsFun.Behavioral.Strategy;
 using GofPatternsFun.Behavioral.Strategy.Strategies;
 using GofPatternsFun.Behavioral.TemplateMethod;
@@ -55,6 +58,14 @@ namespace GofPatternsFun.Behavioral
             director.ProcessRequest(order2);
             var order3 = new Purchase(2036, 350000.0, "Assets the biggest amount.");
             director.ProcessRequest(order3);
+        }
+
+        public static void Observer()
+        {
+            IInvestor appleInv = new Investor("Apple");
+            Subject ibm = new Ibm("Shares", 123.45);
+            ibm.Attach(appleInv);
+            ibm.Price = 234.54;
         }
     }
 }

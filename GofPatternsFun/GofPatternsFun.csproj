@@ -51,6 +51,10 @@
     <Compile Include="Behavioral\Mediator_\Colleage\ParticipantBase.cs" />
     <Compile Include="Behavioral\Mediator_\Colleage\Readonly.cs" />
     <Compile Include="Behavioral\Mediator_\Colleage\Writeonly.cs" />
+    <Compile Include="Behavioral\Observer\Objects\Ibm.cs" />
+    <Compile Include="Behavioral\Observer\Observers\IInvestor.cs" />
+    <Compile Include="Behavioral\Observer\Observers\Investor.cs" />
+    <Compile Include="Behavioral\Observer\Objects\Subject.cs" />
     <Compile Include="Behavioral\Strategy\Strategies\MergeSortStrategy.cs" />
     <Compile Include="Behavioral\Strategy\Strategies\QuickSortStrategy.cs" />
     <Compile Include="Behavioral\Strategy\SortContext.cs" />

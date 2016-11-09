@@ -31,8 +31,8 @@ namespace GofPatternsFun
             //BehaviourPatternsDemo.Mediator();
             //BehaviourPatternsDemo.TemplateMethod();
             //BehaviourPatternsDemo.Strategy();
-            BehaviourPatternsDemo.ChainOfResponsibility();
-
+            //BehaviourPatternsDemo.ChainOfResponsibility();
+            BehaviourPatternsDemo.Observer();
             #endregion
         }
     }
